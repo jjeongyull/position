@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>position</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <header class="header">
+    <h1>POSITION & FLEX BOX</h1>
+  </header>
+  
+  <main>
+    <div class="tabs">
+      <input id="position" type="radio" name="tab_item" checked>
+      <label class="tab-item" for="position">POSITION</label>
+      <input id="flex" type="radio" name="tab_item">
+      <label class="tab-item" for="flex">FLEX BOX</label>
+
+      <div class="tab-content" id="position_content">
+          <div class="position-div">
+            <div class="relative">
+              relative
+              <div class="box absolute">
+                absolute
+                center
+              </div>
+              <div class="box absolute2">
+                absolute<br>
+                right 0<br>
+                top 0
+              </div>
+              <div class="box absolute3">
+                absolute<br>
+                right 0<br>
+                bottom 0
+              </div>
+              <div class="box absolute4">
+                absolute<br>
+                leff 0<br>
+                bottom 0
+              </div>
+              <div class="box absolute5">
+                absolute<br>
+                leff 0<br>
+                top 0
+              </div>
+              <div class="box fixed">
+                fixed<br>
+                left 0<br>
+                top 0
+              </div>
+            </div>
+          </div>
+      </div>
+      <div class="tab-content" id="flex_content">
+          <div class="flex between">
+            <div>space-between</div>
+            <div>space-between</div>
+          </div>
+          <div class="flex center">
+            <div>center</div>
+            <div>center</div>
+          </div>
+          <div class="flex end">
+            <div>flex-end</div>
+            <div>flex-end</div>
+          </div>
+          <div class="flex start">
+            <div>flex-start</div>
+            <div>flex-start</div>
+          </div>
+          <div class="flex around">
+            <div>space-around</div>
+            <div>space-around</div>
+          </div>
+      </div>  
+    </div>    
+  </main>
+</body>
+</html>
